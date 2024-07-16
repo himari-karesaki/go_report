@@ -20,12 +20,6 @@ func main() {
 		items = inputItem(items)
 	}
 	showItems(items)
-	// showItems(items)
-	// fmt.Println("===========")
-	// for i := 0; i < len(items); i++ {
-	// 	fmt.Println(items[i].Category, ":", items[i].Price, "円")
-	// }
-	// fmt.Println("===========")
 }
 
 func inputItem(items []Item) []Item {
@@ -36,7 +30,7 @@ func inputItem(items []Item) []Item {
 	fmt.Print("値段を入力してください: ")
 	fmt.Scan(&item.Price)
 	items = append(items, item)
-	fmt.Println(items)
+
 	return items
 }
 
