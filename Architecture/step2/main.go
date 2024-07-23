@@ -45,7 +45,7 @@ func (d Driver) prepare_trip() {
 }
 
 func main() {
-	var trip prepareInterface = &Trip{2, 3, "車"}
+	var trip preparer = &Trip{2, 3, "車"}
 
 	fmt.Printf("%v\n", trip.prepare())
 
